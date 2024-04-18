@@ -3,3 +3,9 @@
 ## Build-in web server
 
 - [Built-in web server](https://www.php.net/manual/en/features.commandline.webserver.php)
+
+## Setup composer
+
+```sh
+composer init --name tingtt/trainig-php -l MIT
+```

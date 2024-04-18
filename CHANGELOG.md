@@ -18,3 +18,16 @@ composer init --name tingtt/trainig-php -l MIT
 composer require --dev phpstan/phpstan
 vendor/bin/phpstan analyze router.php src
 ```
+
+## Pest
+
+- [Installation](https://pestphp.com/docs/installation)
+
+```sh
+composer require pestphp/pest --dev --with-all-dependencies
+```
+
+```sh
+vendor/bin/pest --init
+vendor/bin/pest
+```

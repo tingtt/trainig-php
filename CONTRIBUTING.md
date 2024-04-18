@@ -12,3 +12,17 @@ https://getcomposer.org/download/
 cd .git-hooks
 make init
 ```
+
+### PHPStan
+
+```sh
+composer phpstan
+```
+
+### Testing
+
+- [Editor Setup](https://pestphp.com/docs/editor-setup)
+
+```sh
+composer test
+```

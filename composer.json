@@ -7,9 +7,16 @@
     }
   },
   "scripts": {
-    "phpstan": "phpstan analyze router.php src"
+    "phpstan": "phpstan analyze router.php src",
+    "test": "pest"
   },
   "require-dev": {
-    "phpstan/phpstan": "^1.10"
+    "phpstan/phpstan": "^1.10",
+    "pestphp/pest": "^2.34"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
   }
 }

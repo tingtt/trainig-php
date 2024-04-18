@@ -26,3 +26,12 @@ composer phpstan
 ```sh
 composer test
 ```
+
+## Directory Architecture
+
+| path   |                      |     |     |
+| ------ | -------------------- | --- | --- |
+| `src/` | `domain/`            |     |     |
+|        | `usecase/`           |     |     |
+|        | `interface-adapter/` |     |     |
+|        | `infrastructure/`    |     |     |

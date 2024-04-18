@@ -3,11 +3,14 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Tingtt\\TrainigPhp\\": "src/"
+      "Domain\\": "src/domain/",
+      "Usecase\\": "src/usecase/",
+      "InterfaceAdapter\\": "src/interface-adapter/",
+      "Infrastructure\\": "src/infrastructure/"
     }
   },
   "scripts": {
-    "phpstan": "phpstan analyze router.php src",
+    "phpstan": "phpstan analyze main.php src",
     "test": "pest"
   },
   "require-dev": {
@@ -18,5 +21,8 @@
     "allow-plugins": {
       "pestphp/pest-plugin": true
     }
+  },
+  "require": {
+    "altorouter/altorouter": "^2.0"
   }
 }

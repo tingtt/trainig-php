@@ -5,7 +5,7 @@
     "psr-4": {
       "Domain\\": "src/domain/",
       "Usecase\\": "src/usecase/",
-      "InterfaceAdapter\\": "src/interface-adapter/",
+      "InterfaceAdapter\\": "src/interfaceAdapter/",
       "Infrastructure\\": "src/infrastructure/"
     }
   },

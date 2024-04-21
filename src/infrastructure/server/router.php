@@ -3,16 +3,20 @@
 namespace Infrastructure\Server;
 
 use AltoRouter;
+use InterfaceAdapter\Controller\ControllerInterface;
 
 class Router
 {
   private AltoRouter $router;
 
-  public function __construct(string $basePath)
-  {
+  public function __construct(
+    readonly private ControllerInterface $controller,
+    string $basePath,
+  ) {
     $this->router = new AltoRouter([], $basePath);
     $this->router->map('GET', '/', function () {
-      echo "<p>Welcome to PHP</p>";
+      $list = $this->controller->getCounterList();
+      echo json_encode($list);
     });
   }
 

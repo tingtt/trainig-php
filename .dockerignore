@@ -1,0 +1,5 @@
+vendor/
+node_modules/
+README.md
+Dockerfile*
+compose.yaml
